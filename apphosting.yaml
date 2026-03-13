@@ -1,0 +1,16 @@
+# Firebase App Hosting Configuration
+# See https://firebase.google.com/docs/app-hosting/configure-runtime
+
+runtime:
+  nodejs: 20
+
+# Environment variables and secrets
+# You must create these secrets in Google Cloud Secret Manager
+# and grant the App Hosting service account access to them.
+env:
+  - variable: NEXT_PUBLIC_SUPABASE_URL
+    secret: SUPABASE_URL
+  - variable: NEXT_PUBLIC_SUPABASE_ANON_KEY
+    secret: SUPABASE_ANON_KEY
+  - variable: SUPABASE_SERVICE_ROLE_KEY
+    secret: SUPABASE_SERVICE_ROLE_KEY
